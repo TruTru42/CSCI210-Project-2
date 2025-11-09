@@ -117,7 +117,7 @@ struct NODE* splitPath(char* pathName, char* baseName, char* dirName){
 
         // Error when there is no matching token
         if (!found) {
-            printf("ERROR: directory %s\n does not exist", token);
+            printf("ERROR: directory %s does not exist\n", token);
             return NULL;
         }
 
