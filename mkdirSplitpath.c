@@ -52,6 +52,8 @@ void mkdir(char pathName[]){
         }
         last->siblingPtr = newNode;
     }
+    // Success Message
+    printf("MKDIR SUCCESS: node %s successfully created\n", pathNam
 
     // Function complete
     return;
@@ -115,7 +117,7 @@ struct NODE* splitPath(char* pathName, char* baseName, char* dirName){
 
         // Error when there is no matching token
         if (!found) {
-            printf("ERROR: directory '%s' not found\n", token);
+            printf("ERROR: directory %s\n does not exist", token);
             return NULL;
         }
 
