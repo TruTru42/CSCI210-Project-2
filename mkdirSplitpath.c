@@ -34,7 +34,7 @@ void mkdir(char pathName[]){
 
     // New Node
     struct NODE* newNode = malloc(sizeof(struct NODE));
-    strcyp(newNode->name, baseName);
+    strcpy(newNode->name, baseName);
     newNode->fileType = 'D';
     newNode->parentPtr = parent;
     newNode->childPtr = NULL;
